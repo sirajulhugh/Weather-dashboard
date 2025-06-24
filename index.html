@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <input type="text" id="cityInput" placeholder="E.g., New York, London, Tokyo" />
+      <button id="searchBtn">Search</button>
+      <div class="separator">or</div>
+      <button id="locationBtn">Use Current Location</button>
+
+      <div id="history">
+        <h3>Recent Cities</h3>
+        <ul id="historyList"></ul>
+      </div>
+    </aside>
+
+    <main>
+      <div id="current" class="card current-weather">
+        <!-- Current weather will be injected here -->
+      </div>
+
+      <h2>5-Day Forecast</h2>
+      <div id="forecast" class="forecast-container">
+        <!-- Forecast cards go here -->
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
